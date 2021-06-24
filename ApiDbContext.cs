@@ -13,7 +13,12 @@ namespace dotnetAspExample
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Artista>()
-            .HasMany(b => b.discos).WithOne();
+            .HasMany(b => b.Discos)
+            .WithOne();
+
+            modelBuilder.Entity<Artista>()
+            .Navigation(b => b.Discos)
+            .UsePropertyAccessMode(PropertyAccessMode.Property);
         }
     }
 }

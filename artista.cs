@@ -5,9 +5,9 @@ namespace dotnetAspExample
 {
     public class Artista
     {
-        public long id { get; set; }
-        public string nombre { get; set; }
-        public DateTime fechaNacimiento {get; set; }
-        public List<Disco> discos { get; set; }
+        public long Id { get; set; }
+        public string Nombre { get; set; }
+        public DateTime FechaNacimiento {get; set; }
+        public virtual List<Disco> Discos { get; set; }
     }
 }

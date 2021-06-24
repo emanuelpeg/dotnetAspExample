@@ -5,9 +5,9 @@ namespace dotnetAspExample
 {
     public class Disco
     {
-        public long id { get; set; }
-        public string nombre { get; set; }
-        public DateTime fechaLanzamiento { get; set; }
+        public long Id { get; set; }
+        public string Nombre { get; set; }
+        public DateTime FechaLanzamiento { get; set; }
 
     }
 }

@@ -1256,19 +1256,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pgoette\\.nuget\\packages\\": {}
+    "/home/emanuel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotnetExample\\dotnetAspExample\\dotnetAspExample.csproj",
+      "projectUniqueName": "/home/emanuel/Facultad/gugler/dotnet/ejemplo_Final/dotnetAspExample/dotnetAspExample.csproj",
       "projectName": "dotnetAspExample",
-      "projectPath": "D:\\dotnetExample\\dotnetAspExample\\dotnetAspExample.csproj",
-      "packagesPath": "C:\\Users\\pgoette\\.nuget\\packages\\",
-      "outputPath": "D:\\dotnetExample\\dotnetAspExample\\obj\\",
+      "projectPath": "/home/emanuel/Facultad/gugler/dotnet/ejemplo_Final/dotnetAspExample/dotnetAspExample.csproj",
+      "packagesPath": "/home/emanuel/.nuget/packages/",
+      "outputPath": "/home/emanuel/Facultad/gugler/dotnet/ejemplo_Final/dotnetAspExample/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pgoette\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/emanuel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1329,7 +1329,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/emanuel/.dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

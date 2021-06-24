@@ -18,39 +18,39 @@ namespace dotnetAspExample.Migrations
 
             modelBuilder.Entity("dotnetAspExample.Artista", b =>
                 {
-                    b.Property<long>("id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("fechaNacimiento")
+                    b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("nombre")
+                    b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Artistas");
                 });
 
             modelBuilder.Entity("dotnetAspExample.Disco", b =>
                 {
-                    b.Property<long>("id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<long?>("Artistaid")
+                    b.Property<long?>("ArtistaId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("fechaLanzamiento")
+                    b.Property<DateTime>("FechaLanzamiento")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("nombre")
+                    b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
-                    b.HasIndex("Artistaid");
+                    b.HasIndex("ArtistaId");
 
                     b.ToTable("Discos");
                 });
@@ -58,13 +58,13 @@ namespace dotnetAspExample.Migrations
             modelBuilder.Entity("dotnetAspExample.Disco", b =>
                 {
                     b.HasOne("dotnetAspExample.Artista", null)
-                        .WithMany("discos")
-                        .HasForeignKey("Artistaid");
+                        .WithMany("Discos")
+                        .HasForeignKey("ArtistaId");
                 });
 
             modelBuilder.Entity("dotnetAspExample.Artista", b =>
                 {
-                    b.Navigation("discos");
+                    b.Navigation("Discos");
                 });
 #pragma warning restore 612, 618
         }
